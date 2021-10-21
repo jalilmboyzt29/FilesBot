@@ -7,7 +7,7 @@ $TG_AUTH_USER_S = (string) getenv("TG_AUTH_USERS");
 $GLOBALS["IS_PUBLIC"] = !$TG_AUTH_USER_S;
 $GLOBALS["TG_AUTH_USERS"] = array();
 if ($TG_AUTH_USER_S == "ALL") {
-    $GLOBALS["IS_PUBLIC"] = true;
+    $GLOBALS["IS_PUBLIC"] = false;
 }
 else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     $GLOBALS["IS_PUBLIC"] = false;
@@ -22,11 +22,9 @@ else {
 }
 
 $GLOBALS["START_MESSAGE"] = <<<EOM
-Thank you for using me <a href="https://github.com/skrtdev/FilesBot">😬</a>
-
+Thank you for using me 
 <u><b>you can forward me any media message</b></u>, and <b><i>I might help you to create a PUBlic link</i></b>.
-
-Subscribe ℹ️ @skrtdev if you ❤️ using this bot!
+Subscribe ℹ️ @mboyzt if you ❤️ using this bot!
 EOM;
-$GLOBALS["CHECKING_MESSAGE"] = "🤔";
-require_once __DIR__ . "/../vendor/autoload.php";
+$GLOBALS["CHECKING_MESSAGE"] = "Proses 🔄";
+require_once DIR . "/../vendor/autoload.php";
